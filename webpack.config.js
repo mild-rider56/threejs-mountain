@@ -57,13 +57,9 @@ module.exports = {
       filename: "style.css"
     }),
     new CopyWebpackPlugin([{
-        from: 'src/3dmodels',
-        to: '3dmodels'
+        from: 'src/assets',
+        to: 'assets'
       },
-      {
-        from: 'src/icons',
-        to: 'icons'
-      }
     ]),
     new HtmlWebpackPlugin({
       // filename is the name of the output file

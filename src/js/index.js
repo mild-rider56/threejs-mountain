@@ -69,9 +69,9 @@ function main() {
 
   {
     const objLoader = new THREE.OBJLoader2();
-    objLoader.loadMtl('3dmodels/mountain__medium/mountain__medium.mtl', null, (materials) => {
+    objLoader.loadMtl('assets/3dmodels/mountain.mtl', null, (materials) => {
       objLoader.setMaterials(materials);
-      objLoader.load('3dmodels/mountain__medium/mountain__medium.obj', (event) => {
+      objLoader.load('assets/3dmodels/mountain.obj', (event) => {
         const root = event.detail.loaderRootNode;
         scene.add(root);
       });
